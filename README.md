@@ -167,7 +167,6 @@ elucid-relay/
 │   └── gateway-api/     # Go 网关、Portal/Admin API、北向 /v1 API
 ├── packages/
 │   └── contracts/       # 共享 API 类型
-├── docs/                # 产品、架构、API、数据库和交付计划文档
 └── infra/               # Docker、部署和脚本
 ```
 
@@ -188,14 +187,6 @@ elucid-relay/
 - 公开 marketplace 或提供商转售入驻。
 - 从 `sub2api`、`new-api` 或 `CLIProxyAPI` 导入运行时代码。
 
-## 文档
+## 本地文档
 
-- [产品规格](docs/product-spec.md)
-- [架构](docs/architecture.md)
-- [API 契约](docs/api-contracts.md)
-- [数据库 Schema](docs/database-schema.md)
-- [Provider 兼容性](docs/provider-compatibility.md)
-- [生产就绪](docs/production-readiness.md)
-- [运维手册](docs/operations-runbook.md)
-- [实现计划](docs/implementation-plan.md)
-- [参考映射](docs/reference-mapping.md)
+设计文档默认放在本地 `docs/`，该目录已加入 `.gitignore`，不随远程仓库发布。
