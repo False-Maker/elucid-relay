@@ -6,6 +6,7 @@ apps/*/dist/
 packages/*/dist/
 coverage/
 docs/
+infra/fixtures/
 .env
 .env.*
 !.env*.example
