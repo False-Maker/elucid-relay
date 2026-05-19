@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-05-08T04:55:57.710Z",
+  "name": "github-copilot",
+  "ok": true,
+  "command": [
+    "/home/elucid/.nvm/versions/node/v22.22.1/bin/node",
+    "/tmp/elucid-github-copilot-capture-XAMVfp/capture-github-copilot.mjs"
+  ],
+  "stdout": "",
+  "stderr": "",
+  "exitCode": 0,
+  "signal": null,
+  "recorder": {
+    "baseUrl": "http://127.0.0.1:42550",
+    "requests": [
+      {
+        "index": 1,
+        "at": "2026-05-08T04:55:57.645Z",
+        "method": "GET",
+        "url": "/models",
+        "path": "/models",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:42550",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "accept": "application/json",
+          "content-type": "application/json",
+          "copilot-integration-id": "vscode-chat",
+          "editor-version": "vscode/1.109.3",
+          "editor-plugin-version": "copilot-chat/0.44.0",
+          "user-agent": "GitHubCopilotChat/0.44.0",
+          "openai-intent": "conversation-panel",
+          "x-github-api-version": "2025-05-01",
+          "x-request-id": "7248f988-3435-4104-98f4-e3c4aff17b9a",
+          "x-vscode-user-agent-library-version": "electron-fetch",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "bodyText": "",
+        "rawBodyBytes": 0,
+        "decodedBodyBytes": 0
+      },
+      {
+        "index": 2,
+        "at": "2026-05-08T04:55:57.657Z",
+        "method": "POST",
+        "url": "/chat/completions",
+        "path": "/chat/completions",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:42550",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "accept": "application/json",
+          "content-type": "application/json",
+          "copilot-integration-id": "vscode-chat",
+          "editor-version": "vscode/1.109.3",
+          "editor-plugin-version": "copilot-chat/0.44.0",
+          "user-agent": "GitHubCopilotChat/0.44.0",
+          "openai-intent": "conversation-panel",
+          "x-github-api-version": "2025-05-01",
+          "x-request-id": "5918bf6a-00a4-4b49-a0c5-310f5b3daff2",
+          "x-vscode-user-agent-library-version": "electron-fetch",
+          "x-interaction-id": "5918bf6a-00a4-4b49-a0c5-310f5b3daff2",
+          "x-interaction-type": "conversation-panel",
+          "x-agent-task-id": "5918bf6a-00a4-4b49-a0c5-310f5b3daff2",
+          "x-initiator": "user",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "104"
+        },
+        "bodyText": "{\"model\":\"gpt-5.1\",\"messages\":[{\"role\":\"user\",\"content\":\"Say ok.\"}],\"max_tokens\":8,\"n\":1,\"stream\":false}",
+        "jsonBody": {
+          "model": "gpt-5.1",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Say ok."
+            }
+          ],
+          "max_tokens": 8,
+          "n": 1,
+          "stream": false
+        },
+        "rawBodyBytes": 104,
+        "decodedBodyBytes": 104
+      },
+      {
+        "index": 3,
+        "at": "2026-05-08T04:55:57.660Z",
+        "method": "POST",
+        "url": "/chat/completions",
+        "path": "/chat/completions",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:42550",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "accept": "application/json, text/event-stream",
+          "content-type": "application/json",
+          "copilot-integration-id": "vscode-chat",
+          "editor-version": "vscode/1.109.3",
+          "editor-plugin-version": "copilot-chat/0.44.0",
+          "user-agent": "GitHubCopilotChat/0.44.0",
+          "openai-intent": "conversation-panel",
+          "x-github-api-version": "2025-05-01",
+          "x-request-id": "a8c9b209-1666-4719-aee4-3791b76f235c",
+          "x-vscode-user-agent-library-version": "electron-fetch",
+          "x-interaction-id": "a8c9b209-1666-4719-aee4-3791b76f235c",
+          "x-interaction-type": "conversation-panel",
+          "x-agent-task-id": "a8c9b209-1666-4719-aee4-3791b76f235c",
+          "x-initiator": "user",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "137"
+        },
+        "bodyText": "{\"model\":\"gpt-5.1\",\"messages\":[{\"role\":\"user\",\"content\":\"Say ok.\"}],\"max_tokens\":8,\"stream\":true,\"stream_options\":{\"include_usage\":true}}",
+        "jsonBody": {
+          "model": "gpt-5.1",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Say ok."
+            }
+          ],
+          "max_tokens": 8,
+          "stream": true,
+          "stream_options": {
+            "include_usage": true
+          }
+        },
+        "rawBodyBytes": 137,
+        "decodedBodyBytes": 137
+      },
+      {
+        "index": 4,
+        "at": "2026-05-08T04:55:57.662Z",
+        "method": "POST",
+        "url": "/responses",
+        "path": "/responses",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:42550",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "accept": "application/json, text/event-stream",
+          "content-type": "application/json",
+          "copilot-integration-id": "vscode-chat",
+          "editor-version": "vscode/1.109.3",
+          "editor-plugin-version": "copilot-chat/0.44.0",
+          "user-agent": "GitHubCopilotChat/0.44.0",
+          "openai-intent": "responses-proxy",
+          "x-github-api-version": "2025-05-01",
+          "x-request-id": "111dd216-2f0c-4d5b-b885-36827a981a2c",
+          "x-vscode-user-agent-library-version": "electron-fetch",
+          "x-interaction-id": "111dd216-2f0c-4d5b-b885-36827a981a2c",
+          "x-interaction-type": "responses-proxy",
+          "x-agent-task-id": "111dd216-2f0c-4d5b-b885-36827a981a2c",
+          "x-initiator": "user",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "124"
+        },
+        "bodyText": "{\"model\":\"gpt-5.1\",\"input\":[{\"role\":\"user\",\"content\":[{\"type\":\"input_text\",\"text\":\"Say ok.\"}]}],\"stream\":true,\"store\":false}",
+        "jsonBody": {
+          "model": "gpt-5.1",
+          "input": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "type": "input_text",
+                  "text": "Say ok."
+                }
+              ]
+            }
+          ],
+          "stream": true,
+          "store": false
+        },
+        "rawBodyBytes": 124,
+        "decodedBodyBytes": 124
+      },
+      {
+        "index": 5,
+        "at": "2026-05-08T04:55:57.666Z",
+        "method": "POST",
+        "url": "/embeddings",
+        "path": "/embeddings",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:42550",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "accept": "application/json",
+          "content-type": "application/json",
+          "copilot-integration-id": "vscode-chat",
+          "editor-version": "vscode/1.109.3",
+          "editor-plugin-version": "copilot-chat/0.44.0",
+          "user-agent": "GitHubCopilotChat/0.44.0",
+          "openai-intent": "conversation-panel",
+          "x-github-api-version": "2025-05-01",
+          "x-request-id": "84d3b625-15a1-48a0-9cb0-ea35cbb22d0b",
+          "x-vscode-user-agent-library-version": "electron-fetch",
+          "x-interaction-id": "84d3b625-15a1-48a0-9cb0-ea35cbb22d0b",
+          "x-interaction-type": "conversation-panel",
+          "x-agent-task-id": "84d3b625-15a1-48a0-9cb0-ea35cbb22d0b",
+          "x-initiator": "user",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "58"
+        },
+        "bodyText": "{\"model\":\"copilot-text-embedding-ada-002\",\"input\":\"hello\"}",
+        "jsonBody": {
+          "model": "copilot-text-embedding-ada-002",
+          "input": "hello"
+        },
+        "rawBodyBytes": 58,
+        "decodedBodyBytes": 58
+      }
+    ]
+  }
+}

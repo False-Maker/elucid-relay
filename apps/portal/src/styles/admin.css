@@ -1,0 +1,219 @@
+.ops-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.ops-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ops-panel.wide {
+  grid-column: 1 / -1;
+}
+.ops-trend {
+  min-height: 240px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18px, 1fr));
+  gap: 7px;
+  align-items: end;
+  padding-top: 12px;
+}
+.ops-trend-point {
+  min-width: 0;
+  display: grid;
+  gap: 7px;
+  align-items: end;
+}
+.ops-trend-point small {
+  min-height: 18px;
+  color: var(--muted-foreground);
+  font: 10px/1 "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.ops-trend-bars {
+  height: 190px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2px;
+  border-bottom: 1px solid var(--border);
+}
+.ops-trend-bars span {
+  display: block;
+  width: 5px;
+  min-height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+.ops-trend-bars .total { background: #0f766e; }
+.ops-trend-bars .failed { background: #b45309; }
+.ops-trend-bars .rejected { background: #b91c1c; }
+.ops-bars {
+  display: grid;
+  gap: 11px;
+  padding-top: 6px;
+}
+.ops-bar-row {
+  display: grid;
+  grid-template-columns: minmax(92px, 0.9fr) minmax(90px, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+.ops-bar-row span {
+  min-width: 0;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ops-bar-row div {
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+.ops-bar-row i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #475569;
+}
+.ops-bar-row strong {
+  font: 12px/1 "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+}
+
+.proxy-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+.proxy-workbench {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  gap: 16px;
+  align-items: start;
+}
+.proxy-editor-grid,
+.proxy-io-grid,
+.proxy-filter-grid {
+  display: grid;
+  gap: 10px;
+}
+.proxy-editor-grid {
+  grid-template-columns: minmax(180px, 0.78fr) minmax(280px, 1.35fr) minmax(130px, 0.55fr);
+  align-items: start;
+}
+.proxy-io-grid,
+.proxy-filter-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.proxy-field {
+  display: grid;
+  gap: 6px;
+}
+.proxy-field span {
+  color: var(--muted-foreground);
+  font-size: 11.5px;
+  line-height: 1.2;
+}
+.proxy-field-wide {
+  grid-column: 1 / -1;
+}
+.proxy-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.proxy-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, auto);
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+.proxy-batch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.proxy-batch-actions span {
+  flex-basis: 100%;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  text-align: right;
+}
+.proxy-row-actions {
+  min-width: 250px;
+  justify-content: flex-end;
+}
+.proxy-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.proxy-row-actions input[type="checkbox"],
+.proxy-select input[type="checkbox"] {
+  width: auto;
+  min-height: auto;
+}
+.proxy-quality-report {
+  display: grid;
+  gap: 14px;
+}
+.proxy-quality-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.proxy-quality-summary div {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--surface-soft);
+  min-width: 0;
+}
+.proxy-quality-summary span {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 11.5px;
+}
+.proxy-quality-summary strong {
+  display: block;
+  margin-top: 8px;
+  font: 600 20px/1.15 "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+  overflow-wrap: anywhere;
+}
+.proxy-quality-summary small {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted-foreground);
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+.proxy-quality-reason {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--surface-soft);
+}
+.proxy-quality-reason span {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 11.5px;
+  margin-bottom: 6px;
+}
+.proxy-quality-reason strong {
+  display: block;
+  color: var(--foreground);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}

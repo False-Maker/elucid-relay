@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens migrated from tokens.css.
+ * Shadcn/ui convention uses HSL or oklch; here we keep the project's existing
+ * palette as CSS custom properties and reference them with Tailwind's @theme.
+ */
+
+@theme {
+  --color-background: #f7f5ef;
+  --color-workspace-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-2: #eef2f6;
+  --color-surface-soft: #fbfbf8;
+  --color-foreground: #111827;
+  --color-muted: #556070;
+  --color-muted-2: #64748b;
+  --color-primary: #0f172a;
+  --color-primary-foreground: #ffffff;
+  --color-bronze: #8b6b3e;
+  --color-bronze-deep: #6f552f;
+  --color-bronze-soft: #d4ba85;
+  --color-steel: #8294a8;
+  --color-success: #166534;
+  --color-warning: #a16207;
+  --color-destructive: #991b1b;
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-border-strong: rgba(15, 23, 42, 0.14);
+  --color-input: rgba(15, 23, 42, 0.14);
+  --color-ring: rgba(212, 186, 133, 0.22);
+
+  --font-sans: Inter, "PingFang SC", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 18px 44px rgba(15, 23, 42, 0.08);
+}
+
+/* Base resets */
+html { font-size: 14px; }
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

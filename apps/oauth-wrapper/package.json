@@ -1,0 +1,14 @@
+{
+  "name": "@elucid-relay/oauth-wrapper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "oauth-wrapper": "./src/index.mjs"
+  },
+  "scripts": {
+    "build": "node --check src/client.mjs && node --check src/strategies.mjs && node --check src/runner.mjs && node --check src/index.mjs",
+    "start": "node src/index.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

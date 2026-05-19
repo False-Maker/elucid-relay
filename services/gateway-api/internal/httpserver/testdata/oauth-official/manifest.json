@@ -1,0 +1,36 @@
+{
+  "fixtures": [
+    {
+      "provider": "codex",
+      "file": "codex.json",
+      "min_requests": 3,
+      "required_paths": ["/v1/models", "/v1/responses"]
+    },
+    {
+      "provider": "gemini",
+      "file": "gemini.json",
+      "min_requests": 2,
+      "required_paths": [
+        "/v1internal:generateContent",
+        "/v1internal:streamGenerateContent"
+      ]
+    },
+    {
+      "provider": "github-copilot",
+      "file": "github-copilot.json",
+      "min_requests": 5,
+      "required_paths": [
+        "/models",
+        "/chat/completions",
+        "/responses",
+        "/embeddings"
+      ]
+    },
+    {
+      "provider": "claude",
+      "file": "claude.json",
+      "min_requests": 1,
+      "required_paths": ["/v1/messages"]
+    }
+  ]
+}

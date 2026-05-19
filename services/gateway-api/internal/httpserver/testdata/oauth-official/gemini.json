@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-05-08T04:55:49.687Z",
+  "name": "gemini",
+  "ok": true,
+  "command": [
+    "/home/elucid/.nvm/versions/node/v22.22.1/bin/node",
+    "/tmp/elucid-gemini-capture-AYgC3i/capture-gemini-code-assist.mjs"
+  ],
+  "stdout": "",
+  "stderr": "",
+  "exitCode": 0,
+  "signal": null,
+  "recorder": {
+    "baseUrl": "http://127.0.0.1:41444",
+    "requests": [
+      {
+        "index": 1,
+        "at": "2026-05-08T04:55:49.670Z",
+        "method": "POST",
+        "url": "/v1internal:generateContent",
+        "path": "/v1internal:generateContent",
+        "query": {},
+        "headers": {
+          "host": "127.0.0.1:41444",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "content-type": "application/json",
+          "user-agent": "GeminiCLI/0.42.0-nightly.20260428.g59b2dea0e/gemini-2.5-pro (linux; x64; terminal)",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "353"
+        },
+        "bodyText": "{\"model\":\"gemini-2.5-pro\",\"project\":\"gemini-capture-project\",\"user_prompt_id\":\"gemini-capture-prompt\",\"request\":{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"Say ok.\"}]}],\"generationConfig\":{\"temperature\":1,\"topP\":0.95,\"topK\":64,\"maxOutputTokens\":8,\"thinkingConfig\":{\"includeThoughts\":true,\"thinkingBudget\":8192}},\"session_id\":\"gemini-capture-session\"}}",
+        "jsonBody": {
+          "model": "gemini-2.5-pro",
+          "project": "gemini-capture-project",
+          "user_prompt_id": "gemini-capture-prompt",
+          "request": {
+            "contents": [
+              {
+                "role": "user",
+                "parts": [
+                  {
+                    "text": "Say ok."
+                  }
+                ]
+              }
+            ],
+            "generationConfig": {
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxOutputTokens": 8,
+              "thinkingConfig": {
+                "includeThoughts": true,
+                "thinkingBudget": 8192
+              }
+            },
+            "session_id": "gemini-capture-session"
+          }
+        },
+        "rawBodyBytes": 353,
+        "decodedBodyBytes": 353
+      },
+      {
+        "index": 2,
+        "at": "2026-05-08T04:55:49.681Z",
+        "method": "POST",
+        "url": "/v1internal:streamGenerateContent?alt=sse",
+        "path": "/v1internal:streamGenerateContent",
+        "query": {
+          "alt": "sse"
+        },
+        "headers": {
+          "host": "127.0.0.1:41444",
+          "connection": "keep-alive",
+          "authorization": "[REDACTED]",
+          "content-type": "application/json",
+          "user-agent": "GeminiCLI/0.42.0-nightly.20260428.g59b2dea0e/gemini-2.5-pro (linux; x64; terminal)",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "353"
+        },
+        "bodyText": "{\"model\":\"gemini-2.5-pro\",\"project\":\"gemini-capture-project\",\"user_prompt_id\":\"gemini-capture-prompt\",\"request\":{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"Say ok.\"}]}],\"generationConfig\":{\"temperature\":1,\"topP\":0.95,\"topK\":64,\"maxOutputTokens\":8,\"thinkingConfig\":{\"includeThoughts\":true,\"thinkingBudget\":8192}},\"session_id\":\"gemini-capture-session\"}}",
+        "jsonBody": {
+          "model": "gemini-2.5-pro",
+          "project": "gemini-capture-project",
+          "user_prompt_id": "gemini-capture-prompt",
+          "request": {
+            "contents": [
+              {
+                "role": "user",
+                "parts": [
+                  {
+                    "text": "Say ok."
+                  }
+                ]
+              }
+            ],
+            "generationConfig": {
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxOutputTokens": 8,
+              "thinkingConfig": {
+                "includeThoughts": true,
+                "thinkingBudget": 8192
+              }
+            },
+            "session_id": "gemini-capture-session"
+          }
+        },
+        "rawBodyBytes": 353,
+        "decodedBodyBytes": 353
+      }
+    ]
+  }
+}

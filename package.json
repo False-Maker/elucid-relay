@@ -1,0 +1,44 @@
+{
+  "name": "elucid-relay",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @elucid-relay/contracts && npm run build --workspace @elucid-relay/oauth-wrapper && npm run build --workspace @elucid-relay/portal",
+    "build:console": "npm run build --workspace @elucid-relay/portal",
+    "build:portal": "npm run build --workspace @elucid-relay/portal",
+    "build:oauth-wrapper": "npm run build --workspace @elucid-relay/oauth-wrapper",
+    "dev": "npm run --workspace @elucid-relay/portal dev",
+    "dev:console": "npm run --workspace @elucid-relay/portal dev",
+    "dev:portal": "npm run --workspace @elucid-relay/portal dev",
+    "e2e:providers": "bash infra/provider-e2e-all.sh",
+    "e2e:codex-openai": "node infra/codex-openai-e2e.mjs",
+    "e2e:codex-chatgpt-responses": "node infra/codex-chatgpt-responses-e2e.mjs",
+    "e2e:gemini-codeassist": "node infra/gemini-codeassist-e2e.mjs",
+    "e2e:github-copilot": "node infra/github-copilot-e2e.mjs",
+    "e2e:stripe": "node infra/stripe-testmode-e2e.mjs",
+    "oauth:capture": "node infra/oauth-official-capture.mjs",
+    "oauth:sync-fixtures": "node infra/sync-oauth-official-fixtures.mjs",
+    "oauth-wrapper": "npm run --workspace @elucid-relay/oauth-wrapper start --",
+    "release:gate": "bash infra/release-gate.sh",
+    "smoke:browser": "node infra/browser-smoke.mjs",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.49.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

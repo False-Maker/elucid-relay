@@ -1,0 +1,18 @@
+@media (max-width: 960px) {
+  .shell { grid-template-columns: 1fr; }
+  .sidebar { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+  .sidebar nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sidebar-footer { margin-top: 0; }
+  .topbar { position: static; padding: 16px; align-items: flex-start; flex-direction: column; }
+  .page-content { padding: 16px; }
+  .grid.three, .row, .filters, .form-grid, .form-grid.relaxed, .dashboard-list, .metric-grid, .metric-grid.tight, .connect-grid, .copy-row, .plan-grid, .ops-metrics, .ops-grid, .setup-progress, .setup-summary, .setup-steps, .workflow-grid, .workflow-grid.user-flow, .proxy-metrics, .proxy-workbench, .proxy-editor-grid, .proxy-io-grid, .proxy-filter-grid, .proxy-toolbar, .proxy-quality-summary { grid-template-columns: 1fr; }
+  .quick-actions, .secret-header { align-items: stretch; flex-direction: column; }
+  .proxy-form-actions, .proxy-batch-actions, .proxy-batch-actions span, .proxy-row-actions { justify-content: flex-start; text-align: left; }
+  .empty-state { align-items: flex-start; flex-direction: column; }
+  .public-hero { grid-template-columns: 1fr; }
+  .env-pill { display: none; }
+  .action-modal-drawer {
+    width: 100%;
+    border-radius: 0;
+  }
+}
